@@ -1,0 +1,3 @@
+service {
+"employee.master" as "employeemaster";
+}

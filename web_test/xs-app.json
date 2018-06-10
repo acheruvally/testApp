@@ -1,0 +1,25 @@
+{
+  "welcomeFile": "/web_test/index.html",
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/web_test/(.*)$",
+      "target": "$1",
+      "localDir": "webapp"
+    },
+    {"source": "(.*)(.xsjs)",
+	"destination": "core-backend",
+	"csrfProtection": false,
+	"authenticationType": "none"
+	}, 
+	{
+	"source": "(.*)(.xsodata)",
+	"destination": "core-backend",
+	"authenticationType": "none"
+	}
+
+  ]
+}

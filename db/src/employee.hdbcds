@@ -1,0 +1,8 @@
+context employee {
+
+    /*@@layout{"layoutInfo":{"x":61,"y":101.5}}*/
+    entity master {
+        key id   : Integer;
+            name : String(10);
+    };
+};
